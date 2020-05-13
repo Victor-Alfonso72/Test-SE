@@ -1,0 +1,59 @@
+.example-container {
+    height: 470px;
+    overflow: auto;
+  }
+
+  .header-detail{
+      width: 100%;
+      text-align: center;
+      height: 7vh;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+
+  .content-table{
+    padding: 10px;
+  }
+
+  .footer-dialog{
+    padding: 10px 20px;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  tr.mat-footer-row {
+    font-weight: bold;
+  }
+  
+  .mat-table-sticky {
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .buttons-dialog{
+      width: 100%;
+  }
+
+  td, th {
+    width: 16.6%;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 771px) {
+    td, th {
+        width: 50%;
+      }
+
+    .example-container {
+        height: 320px;
+        overflow: auto;
+    }
+  }
+
+  .btn-outline-primary {
+    background: #4D648D;
+    color: #FFFFFF;
+    border-color: #4D648D;
+    border-radius: 0px !important;
+}

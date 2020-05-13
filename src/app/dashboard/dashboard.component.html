@@ -1,0 +1,166 @@
+<div *ngIf="data" class="container">
+    <div class="justify-content-md-center">
+        <!-- HEADER -->
+        <div class="header-content">
+            <div class="clearfix">
+                <strong class="float-left info-productividad">
+                    INFORME DE PRODUCTIVIDAD
+                </strong>
+                <div class="float-right  buttons-mobile">
+                    <button type="button" class="btn btn-outline-primary buttons-mobile-inside">
+                        <mat-icon>near_me</mat-icon>
+                    </button>
+
+                    <button type="button" class="btn btn-outline-primary buttons-mobile-inside">
+                        <mat-icon>save_alt</mat-icon>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+
+                    <mat-accordion class="mode-mobilie">
+                        <mat-expansion-panel>
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              Sucursal
+                            </mat-panel-title>
+                          </mat-expansion-panel-header>
+
+                          <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                <mat-form-field>
+                                    <mat-label>Sucursal</mat-label>
+                                    <mat-select>
+                                        <mat-option>
+                                            Sucursal 1
+                                        </mat-option>
+                                        <mat-option>
+                                            Sucursal 2
+                                        </mat-option>
+                                        <mat-option>
+                                            Sucursal 3
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                <mat-form-field>
+                                    <mat-label>Periodo</mat-label>
+                                    <mat-select>
+                                        <mat-option>
+                                            Periodo 1
+                                        </mat-option>
+                                        <mat-option>
+                                            Periodo 2
+                                        </mat-option>
+                                        <mat-option>
+                                            Periodo 3
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                <mat-form-field>
+                                    <mat-label>Mes</mat-label>
+                                    <mat-select>
+                                        <mat-option>
+                                            Enero
+                                        </mat-option>
+                                        <mat-option>
+                                            Febrero
+                                        </mat-option>
+                                        <mat-option>
+                                            Marzo
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                      
+                        </mat-expansion-panel>
+                      </mat-accordion>
+
+                    <div class="row mode-descktop">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <mat-form-field>
+                                <mat-label>Sucursal</mat-label>
+                                <mat-select>
+                                    <mat-option>
+                                        Sucursal 1
+                                    </mat-option>
+                                    <mat-option>
+                                        Sucursal 2
+                                    </mat-option>
+                                    <mat-option>
+                                        Sucursal 3
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <mat-form-field>
+                                <mat-label>Periodo</mat-label>
+                                <mat-select>
+                                    <mat-option>
+                                        Periodo 1
+                                    </mat-option>
+                                    <mat-option>
+                                        Periodo 2
+                                    </mat-option>
+                                    <mat-option>
+                                        Periodo 3
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <mat-form-field>
+                                <mat-label>Mes</mat-label>
+                                <mat-select>
+                                    <mat-option>
+                                        Enero
+                                    </mat-option>
+                                    <mat-option>
+                                        Febrero
+                                    </mat-option>
+                                    <mat-option>
+                                        Marzo
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-auto buttons-header">
+                    <button type="button" class="btn btn-outline-primary">ENVIAR POR CORREO</button>
+                </div>
+                <div class="col-auto buttons-header">
+                    <button type="button" class="btn btn-outline-primary">DESCARGAR</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="row">
+            <div *ngFor="let item of data" class="col-sm-6">
+                <app-card-information [dataRecived]="item"></app-card-information>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="row">
+            <div class="col-sm-12">
+                <mat-card class="footer-total">
+                    <app-card-total [total]="Total"></app-card-total>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

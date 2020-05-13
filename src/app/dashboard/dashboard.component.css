@@ -1,0 +1,57 @@
+.header-content{
+    padding: 10px 0px 0px 0px;
+}
+
+.buttons-mobile{
+    display: none;
+}
+
+
+.mode-mobilie{
+    display: none;
+}
+
+.buttons-mobile-inside{
+    padding: 10px 5px 0px 5px;
+    margin: 10px;
+}
+
+.btn-outline-primary {
+    background: #FFFFFF;
+    color: #4D648D;
+    border-color: #4D648D;
+    border-radius: 0px !important;
+}
+
+.footer-total{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+@media only screen and (max-width: 771px) {
+    .buttons-header{
+        display: none;
+    }
+
+    .buttons-mobile{
+        display: block;
+    }
+
+    .mode-descktop{
+        display: none;
+    }
+
+    .mode-mobilie{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .info-productividad{
+        padding-top: 20px;
+    }
+}

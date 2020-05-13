@@ -1,0 +1,34 @@
+#toolbar{
+  background-color: #4D648D !important;
+  color: #ffffff !important;
+}
+
+.example-icon {
+    padding: 0 16px;
+  }
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.search-client{
+  margin-top: 15px !important;
+}
+
+#menu{
+  display: none;
+}
+
+@media only screen and (max-width: 771px) {
+  #search{
+      display: none;
+  }
+
+  #notify{
+    display: none;
+  }
+
+  #menu{
+    display: block;
+  }
+}

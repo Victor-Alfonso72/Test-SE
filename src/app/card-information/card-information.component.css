@@ -1,0 +1,36 @@
+.content{
+    width: 100%;
+    height: 31vh;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+
+.body-content{
+    height: 12vh;
+}
+
+.item-subtitule{
+    font-size: 17px;
+}
+
+.item-data{
+    padding: 10px 0px;
+    height: 6vh;
+}
+
+.item-value{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.mat-button-toggle-group-appearance-standard{
+    border-radius: 0px !important;
+    border: 1px solid #4D648D;
+}
+
+.mat-button-toggle-appearance-standard{
+    color: #4D648D !important;
+}

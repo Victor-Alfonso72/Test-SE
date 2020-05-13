@@ -1,0 +1,49 @@
+<mat-card class="content">
+
+    <!-- HEADER -->
+    <div class="clearfix content-head">
+        <span class="float-left">
+            <strong>{{dataRecived.title}}</strong>
+        </span>
+        <mat-button-toggle-group class="float-right" #group="matButtonToggleGroup">
+            <mat-button-toggle (click)="Opendetail()" value="left" aria-label="Text align left">
+                <mat-icon>pie_chart</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle (click)="Opendetail()" value="center" aria-label="Text align center">
+                <mat-icon>list</mat-icon>
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="body-content">
+        <div *ngIf="dataRecived.tipo == 'citasAmbulatorias'"  class="row">
+            <div  class="col-sm-12 item-data">
+                <span class="item-subtitule"> FONASA :  </span>
+                <span class="item-value">{{cantidadFonsa}}</span>
+            </div>
+            <div class="col-sm-12 item-data">
+                <span class="item-subtitule"> ISAPRE :  </span>
+                <span class="item-value">{{cantidadIsapre}}</span>
+            </div>
+        </div>
+
+        <div *ngIf="dataRecived.tipo != 'citasAmbulatorias'"  class="row">
+            <div  class="col-sm-12 item-data">
+                <span class="item-subtitule"> CANTIDAD :  </span>
+                <span class="item-value">{{cantidad}}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <app-card-total [total]="Total"></app-card-total>
+    <!-- <div class="footer">
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="item-subtitule">TOTAL : </span>
+                <span class="item-total"> {{500400 | currency}}</span>
+            </div>
+        </div>
+    </div> -->
+</mat-card>
